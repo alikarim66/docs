@@ -1,0 +1,42 @@
+version = 1
+
+[[analyzers]]
+name = "python"
+enabled = true
+
+  [analyzers.meta]
+  runtime_version = "3.x.x"
+
+[[analyzers]]
+name = "docker"
+enabled = true
+
+[[analyzers]]
+name = "ruby"
+enabled = true
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  plugins = [
+    "meteor",
+    "react",
+    "angularjs",
+    "angular",
+    "vue",
+    "ember"
+  ]
+  environment = [
+    "mongo",
+    "nodejs",
+    "mocha",
+    "browser",
+    "jasmine",
+    "cypress",
+    "jquery",
+    "jest"
+  ]
+  style_guide = "google"
+  dialect = "typescript"
